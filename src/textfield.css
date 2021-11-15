@@ -1,0 +1,46 @@
+.textfield-control {
+  padding: var(--size-400) var(--size-600);
+  border-radius: var(--radius-200);
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  background-color: var(--textfield-bg-default);
+  color: var(--textfield-fg-default);
+  border-color: var(--textfield-border-default);
+}
+
+.textfield-control:hover {
+  background-color: var(--textfield-bg-hovered);
+  color: var(--textfield-fg-hovered);
+  border-color: var(--textfield-border-hovered);
+}
+
+.textfield-control:focus {
+  background-color: var(--textfield-bg-focused);
+  color: var(--textfield-fg-focused);
+  border-color: var(--textfield-border-focused);
+}
+
+.textfield-control[disabled] {
+  background-color: var(--textfield-bg-disabled);
+  color: var(--textfield-fg-disabled);
+  border-color: var(--textfield-border-disabled);
+}
+
+.textfield {
+  --textfield-bg-default: #fff;
+  --textfield-fg-default: #000;
+  --textfield-border-default: #d8d8d8;
+
+  --textfield-bg-hovered: #fff;
+  --textfield-fg-hovered: #000;
+  --textfield-border-hovered: #d8d8d8;
+
+  --textfield-bg-focused: #fff;
+  --textfield-fg-focused: #000;
+  --textfield-border-focused: #d8d8d8;
+
+  --textfield-bg-disabled: #fff;
+  --textfield-fg-disabled: #000;
+  --textfield-border-disabled: #d8d8d8;
+}

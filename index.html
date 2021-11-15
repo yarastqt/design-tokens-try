@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- design system -->
+  <link rel="stylesheet" href="src/color.css">
+  <link rel="stylesheet" href="src/unit.css">
+  <!-- components -->
+  <link rel="stylesheet" href="src/button.css">
+  <link rel="stylesheet" href="src/checkbox.css">
+  <link rel="stylesheet" href="src/listbox.css">
+  <link rel="stylesheet" href="src/switch.css">
+  <link rel="stylesheet" href="src/textfield.css">
+</head>
+<body>
+
+  <div>
+    <h2>Button</h2>
+    <div>
+      <button class="button" data-tone="brand" data-variant="filled">Button</button>
+      <button class="button" data-tone="brand" data-variant="outlined">Button</button>
+      <button class="button" data-tone="brand" data-variant="borderless">Button</button>
+    </div>
+  </div>
+
+  <div>
+    <h2>Checkbox</h2>
+    <div>
+      <div class="checkbox" data-variant="filled" data-tone="default">
+        <div class="checkbox-tick"></div>
+      </div>
+      <div class="checkbox" data-variant="outlined" data-tone="default">
+        <div class="checkbox-tick"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Switch</h2>
+    <div>
+      <div class="switch">
+        <div class="switch-knob"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>TextField</h2>
+    <div>
+      <div class="textfield" data-variant="filled" data-tone="default">
+        <input class="textfield-control" type="text">
+      </div>
+      <div class="textfield" data-variant="outlined" data-tone="default">
+        <input class="textfield-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>ListBox</h2>
+    <div>
+      <div class="listbox">
+        <div class="listbox-item">ListBox item</div>
+        <div class="listbox-item">ListBox item</div>
+        <div class="listbox-item">ListBox item</div>
+        <div class="listbox-item">ListBox item</div>
+        <div class="listbox-item">ListBox item</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/index.ts"></script>
+</body>
+</html>

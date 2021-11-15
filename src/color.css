@@ -1,0 +1,59 @@
+:root {
+  --l-color-transparent: transparent;
+
+  --l-color-action-brand-default: #ffdb4d;
+  --l-color-action-brand-hovered: #ffd633;
+  --l-color-action-brand-pressed: #ffcc00;
+  --l-color-action-brand-disabled: #f7f8fa;
+
+  --l-color-action-accent-base: #ff3333;
+  --l-color-action-accent-hovered: #ff0000;
+  --l-color-action-accent-pressed: #f20008;
+  --l-color-action-accent-disabled: #f7f8fa;
+
+  --l-color-action-default-base: #f1f2f5;
+  --l-color-action-default-hovered: #e6e9f0;
+  --l-color-action-default-pressed: #dfe3eb;
+  --l-color-action-default-disabled: #f7f8fa;
+
+  --l-color-action-critical-base: #d00015;
+  --l-color-action-critical-hovered: #bf001a;
+  --l-color-action-critical-pressed: #ae001d;
+  --l-color-action-critical-disabled: #f7f8fa;
+
+  --l-color-surface-brand-default: #fffdde;
+  --l-color-surface-brand-hovered: #fffac7;
+  --l-color-surface-brand-pressed: #fff6b2;
+
+  --l-color-surface-default-default: #f7f8fa;
+  --l-color-surface-default-hovered: #f1f2f5;
+  --l-color-surface-default-pressed: #e6e9f0;
+
+  --l-color-surface-critical-default: #ffb6ab;
+  --l-color-surface-critical-subdued: #fff5f2;
+  --l-color-surface-critical-hovered: #ffe2db;
+  --l-color-surface-critical-pressed: #ffcdc3;
+
+  --l-color-border-brand-base: #ffdb4d;
+  --l-color-border-brand-subdued: #fff29c;
+  --l-color-border-brand-disabled: #fffac7;
+
+  --l-color-border-accent-base: #ff3333;
+  --l-color-border-accent-subdued: #ffb6ab;
+  --l-color-border-accent-disabled: #ffe2db;
+
+  --l-color-border-default-base: #c1c5d6;
+  --l-color-border-default-subdued: #dfe3eb;
+  --l-color-border-default-disabled: #f1f2f5;
+
+  --l-color-content-on-brand: #662c00;
+  --l-color-content-on-accent: #ffffff;
+  --l-color-content-on-default: #272733;
+  --l-color-content-on-critical: #ffffff;
+
+  --l-color-content-default: #272733;
+  --l-color-content-subdued: #696b80;
+  --l-color-content-disabled: #c9cedb;
+  --l-color-content-brand: #662c00;
+  --l-color-content-brand-subdued: #a85f00;
+}

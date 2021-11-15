@@ -1,0 +1,14 @@
+.listbox {
+  display: inline-flex;
+  flex-direction: column;
+
+  background-color: #ccc;
+}
+
+.listbox-item {
+  height: var(--size-1600);
+  padding: 0 var(--size-800);
+
+  display: flex;
+  align-items: center;
+}

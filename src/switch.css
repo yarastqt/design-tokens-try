@@ -1,0 +1,22 @@
+.switch {
+  position: relative;
+
+  width: calc(var(--size-1200) * 2);
+  height: var(--size-1200);
+  border-radius: calc(var(--size-1200) / 2);
+
+  background-color: #ccc;
+}
+
+.switch-knob {
+  width: var(--size-1000);
+  height: var(--size-1000);
+
+  border-radius: 50%;
+  background-color: #fff;
+
+  position: absolute;
+  right: var(--size-100);
+  bottom: var(--size-100);
+  top: var(--size-100);
+}

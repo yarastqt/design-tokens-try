@@ -1,0 +1,21 @@
+:root {
+  --radius-100: 4px;
+  --radius-200: 8px;
+
+  --size-100: 2px;
+  --size-200: 4px;
+  --size-300: 6px;
+  --size-400: 8px;
+  --size-500: 10px;
+  --size-600: 12px;
+  --size-700: 14px;
+  --size-800: 16px;
+  --size-900: 18px;
+  --size-1000: 20px;
+  --size-1100: 22px;
+  --size-1200: 24px;
+  --size-1300: 26px;
+  --size-1400: 28px;
+  --size-1500: 30px;
+  --size-1600: 32px;
+}
