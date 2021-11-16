@@ -61,4 +61,7 @@
   --l-color-content-disabled: #c9cedb;
   --l-color-content-brand: #662c00;
   --l-color-content-brand-subdued: #a85f00;
+
+  /* TODO список токенов, с которыми непонятно как быть */
+  --l-color-system-knob: #fff;
 }
