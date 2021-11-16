@@ -46,6 +46,11 @@
   --l-color-border-default-subdued: #dfe3eb;
   --l-color-border-default-disabled: #f1f2f5;
 
+  /* TODO: Обновить цвета из figma */
+  --l-color-border-critical-base: #d00015;
+  --l-color-border-critical-subdued: #ffb6ab;
+  --l-color-border-critical-disabled: #ffe2db;
+
   --l-color-content-on-brand: #662c00;
   --l-color-content-on-accent: #ffffff;
   --l-color-content-on-default: #272733;

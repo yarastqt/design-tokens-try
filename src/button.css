@@ -2,7 +2,9 @@
   padding: var(--size-400) var(--size-600);
   border-radius: var(--radius-200);
   background-color: var(--button-bg-default);
+  border-width: 1px;
   color: var(--button-fg-default);
+  border-style: solid;
   border-color: var(--button-border-default);
   cursor: pointer;
 }
@@ -25,56 +27,152 @@
   border-color: var(--button-border-disabled);
 }
 
+.button[data-variant='filled'],
+.button[data-variant='borderless'] {
+  --button-border-default: var(--l-color-transparent);
+  --button-border-hovered: var(--l-color-transparent);
+  --button-border-pressed: var(--l-color-transparent);
+  --button-border-disabled: var(--l-color-transparent);
+}
+
+.button[data-variant='borderless'] {
+  --button-bg-default: var(--l-color-transparent);
+}
+
+/* Brand */
 .button[data-tone='brand'][data-variant='filled'] {
   --button-bg-default: var(--l-color-action-brand-default);
   --button-fg-default: var(--l-color-content-on-brand);
-  --button-border-default: var(--l-color-transparent);
 
   --button-bg-hovered: var(--l-color-action-brand-hovered);
   --button-fg-hovered: var(--button-fg-default);
-  --button-border-hovered: var(--l-color-transparent);
 
   --button-bg-pressed: var(--l-color-action-brand-pressed);
   --button-fg-pressed: var(--button-fg-default);
-  --button-border-pressed: var(--l-color-transparent);
 
   --button-bg-disabled: var(--l-color-action-brand-disabled);
   --button-fg-disabled: var(--l-color-content-disabled);
-  --button-border-disabled: var(--l-color-transparent);
 }
 
 .button[data-tone='brand'][data-variant='outlined'] {
   --button-bg-default: var(--l-color-surface-brand-default);
   --button-fg-default: var(--l-color-content-brand);
-  --button-border-default: var(--l-color-transparent);
+  --button-border-default: var(--l-color-border-brand-base);
 
   --button-bg-hovered: var(--l-color-surface-brand-hovered);
   --button-fg-hovered: var(--l-color-content-brand);
-  --button-border-hovered: var(--l-color-transparent);
+  --button-border-hovered: var(--l-color-border-brand-base);
 
   --button-bg-pressed: var(--l-color-surface-brand-pressed);
   --button-fg-pressed: var(--l-color-content-brand);
-  --button-border-pressed: var(--l-color-transparent);
+  --button-border-pressed: var(--l-color-border-brand-base);
 
   --button-bg-disabled: var(--l-color-action-brand-disabled);
   --button-fg-disabled: var(--l-color-content-disabled);
-  --button-border-disabled: var(--l-color-transparent);
+  --button-border-disabled: var(--l-color-border-brand-disabled);
 }
 
 .button[data-tone='brand'][data-variant='borderless'] {
-  --button-bg-default: var(--l-color-transparent);
   --button-fg-default: var(--l-color-content-brand);
-  --button-border-default: var(--l-color-transparent);
 
   --button-bg-hovered: var(--l-color-surface-brand-hovered);
   --button-fg-hovered: var(--l-color-content-brand);
-  --button-border-hovered: var(--l-color-transparent);
 
   --button-bg-pressed: var(--l-color-surface-brand-pressed);
   --button-fg-pressed: var(--l-color-content-brand);
-  --button-border-pressed: var(--l-color-transparent);
 
   --button-bg-disabled: var(--l-color-action-brand-disabled);
   --button-fg-disabled: var(--l-color-content-disabled);
-  --button-border-disabled: var(--l-color-transparent);
+}
+
+/* Default */
+.button[data-tone='default'][data-variant='filled'] {
+  --button-bg-default: var(--l-color-action-default-base);
+  --button-fg-default: var(--l-color-content-on-default);
+
+  --button-bg-hovered: var(--l-color-action-default-hovered);
+  --button-fg-hovered: var(--button-fg-default);
+
+  --button-bg-pressed: var(--l-color-action-default-pressed);
+  --button-fg-pressed: var(--button-fg-default);
+
+  --button-bg-disabled: var(--l-color-action-default-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
+}
+
+.button[data-tone='default'][data-variant='outlined'] {
+  --button-bg-default: var(--l-color-surface-default-default);
+  --button-fg-default: var(--l-color-content-default);
+  --button-border-default: var(--l-color-border-default-base);
+
+  --button-bg-hovered: var(--l-color-surface-default-hovered);
+  --button-fg-hovered: var(--l-color-content-default);
+  --button-border-hovered: var(--l-color-border-default-base);
+
+  --button-bg-pressed: var(--l-color-surface-default-pressed);
+  --button-fg-pressed: var(--l-color-content-default);
+  --button-border-pressed: var(--l-color-border-default-base);
+
+  --button-bg-disabled: var(--l-color-action-default-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
+  --button-border-disabled: var(--l-color-border-default-disabled);
+}
+
+.button[data-tone='default'][data-variant='borderless'] {
+  --button-fg-default: var(--l-color-content-default);
+
+  --button-bg-hovered: var(--l-color-surface-default-hovered);
+  --button-fg-hovered: var(--l-color-content-default);
+
+  --button-bg-pressed: var(--l-color-surface-default-pressed);
+  --button-fg-pressed: var(--l-color-content-default);
+
+  --button-bg-disabled: var(--l-color-action-default-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
+}
+
+/* Critical */
+.button[data-tone='critical'][data-variant='filled'] {
+  --button-bg-default: var(--l-color-action-critical-base);
+  --button-fg-default: var(--l-color-content-on-critical);
+
+  --button-bg-hovered: var(--l-color-action-critical-hovered);
+  --button-fg-hovered: var(--button-fg-default);
+
+  --button-bg-pressed: var(--l-color-action-critical-pressed);
+  --button-fg-pressed: var(--button-fg-default);
+
+  --button-bg-disabled: var(--l-color-action-critical-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
+}
+
+.button[data-tone='critical'][data-variant='outlined'] {
+  --button-bg-default: var(--l-color-surface-critical-subdued);
+  --button-fg-default: var(--l-color-content-critical);
+  --button-border-default: var(--l-color-border-critical-base);
+
+  --button-bg-hovered: var(--l-color-surface-critical-hovered);
+  --button-fg-hovered: var(--l-color-content-critical);
+  --button-border-hovered: var(--l-color-border-critical-base);
+
+  --button-bg-pressed: var(--l-color-surface-critical-pressed);
+  --button-fg-pressed: var(--l-color-content-critical);
+  --button-border-pressed: var(--l-color-border-critical-base);
+
+  --button-bg-disabled: var(--l-color-action-critical-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
+  --button-border-disabled: var(--l-color-border-critical-disabled);
+}
+
+.button[data-tone='critical'][data-variant='borderless'] {
+  --button-fg-default: var(--l-color-content-critical);
+
+  --button-bg-hovered: var(--l-color-surface-critical-hovered);
+  --button-fg-hovered: var(--l-color-content-critical);
+
+  --button-bg-pressed: var(--l-color-surface-critical-pressed);
+  --button-fg-pressed: var(--l-color-content-critical);
+
+  --button-bg-disabled: var(--l-color-action-critical-disabled);
+  --button-fg-disabled: var(--l-color-content-disabled);
 }
